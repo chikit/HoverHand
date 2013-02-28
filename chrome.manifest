@@ -1,0 +1,8 @@
+content     hoverhand    chrome/content/
+content     hoverhand    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://hoverhand/content/browser.xul
+
+locale	hoverhand	en-US	locale/en-US/
+
+skin	hoverhand	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://hoverhand/skin/skin.css

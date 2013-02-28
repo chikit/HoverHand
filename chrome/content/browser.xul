@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hoverhand SYSTEM "chrome://hoverhand/locale/translations.dtd">
+<overlay id="hoverhandoverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="hoverhand.js" />
+		
+		<menupopup id="menu_ToolsPopup"> 
+			<menuitem label="&runhoverhand;" key="hover-hand-run-key" oncommand="hoverhand.run()"/>
+            <menuitem label="&togglehoverhand;" key="hover-hand-toggle-key" oncommand="hoverhand.toggle()"/>
+		</menupopup>
+		
+		<keyset>
+			<key id="hover-hand-run-key" modifiers="accel alt shift" key="R" oncommand="hoverhand.run()"/>
+            <key id="hover-hand-toggle-key" modifiers="accel alt shift" key="T" oncommand="hoverhand.toggle()"/>
+		</keyset>
+</overlay>

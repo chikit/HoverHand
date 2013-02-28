@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+ 
+<prefwindow id="pref-window"
+     title="Hover Hand Preferences"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <prefpane id="pref-hover-hand" label="Hover Hand Preferences">
+        <preferences id="prefences-hover-hand">
+            <preference id="hover-hand-enable" name="extensions.hoverhand.enable" type="bool"/>
+            <preference id="hover-hand-size" name="extensions.hoverhand.size" type="string"/>
+        </preferences>
+
+        <groupbox id="groupbox">
+            <caption id="capture" label="Settings"/>
+            <grid id="grid">
+                <columns id="columns">
+                    <column id="column-1" flex="4"/>
+                    <column id="column-2" flex="1"/>
+                </columns>
+                <rows id="rows">
+                    <row id="row-1">
+                        <label id="lbl_enable" control="enable" value="Enable: "/>
+                        <checkbox id="enable" preference="hover-hand-enable"/>
+                    </row>
+                    <row id="row-2">
+                        <label id="lbl_size" control="size" value="Photo Size: " />
+                        <menulist id="size" preference="hover-hand-size" >
+                          <menupopup id="menu_size">
+                            <menuitem label="25%" value="25" />
+                            <menuitem label="50%" value="50" />
+                            <menuitem label="65%" value="65" />
+                            <menuitem label="75%" value="75" selected="true" />
+                            <menuitem label="100%" value="100" />
+                            <menuitem label="125%" value="125"  />
+                            <menuitem label="150%" value="150" />
+                          </menupopup>
+                        </menulist>
+                    </row>
+                </rows>
+            </grid>
+        </groupbox>
+    </prefpane>
+ 
+</prefwindow>
