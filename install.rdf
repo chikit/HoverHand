@@ -3,7 +3,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-		<em:id>chikit@gmail.com</em:id>
+		<em:id>01chanci@gmail.com</em:id>
 		<em:name>Hover Hand</em:name>
 		<em:version>0.3.1</em:version>
 		<em:type>2</em:type>
